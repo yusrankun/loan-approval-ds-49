@@ -44,7 +44,7 @@ def run_ml_app():
     applicant_income = right.number_input("Applicant Income")
     coApplicant_income = left.number_input("coApplicant Income")
     loan_amount = right.number_input("Loan Amount")
-    loan_amount_term = left.number_input(Label = "Loan Amount Term", min_value=90, max_value=360)
+    loan_amount_term = left.number_input(label = "Loan Amount Term", min_value=90, max_value=360)
     credit_history = right.selectbox("Credit History", (0.0, 1.0))
     property_area = st.selectbox("Property Area", ("Rural", "Semiurban", "Urban"))
     button = st.button("Predict")
