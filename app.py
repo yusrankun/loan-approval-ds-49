@@ -30,7 +30,7 @@ def main():
 
 def run_ml_app():
     design = """<div style="padding:15px;">
-                    <h1 style="color:#000">Loan Eligibility Prediction</h1>
+                    <h1 style="color:#fff">Loan Eligibility Prediction</h1>
                 </div
              """
     st.markdown(design, unsafe_allow_html=True)
@@ -68,7 +68,7 @@ def predict(gender, married, dependent, education, self_employed, applicant_inco
     pro = 0 if property_area == "Semiurban" else 1 if property_area == "Urban" else 2
                              
     #Making prediction
-    prediction = Logictic_Regression_Model.predict(
+    prediction = Logistic_Regression_Model.predict(
     [[gen, mar, dependent, edu, sem, applicant_income, coApplicant_income,
     loan_amount, loan_amount_term, credit_history, pro]]
     )
